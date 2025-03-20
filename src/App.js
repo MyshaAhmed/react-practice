@@ -50,9 +50,27 @@ function App() {
         <p>The sum of the numbers in the array is {numbers.reduce((a,b)=>a+b,0)}. </p>
         <button onClick={greet}>Greet</button>
         <p>{greeting}</p>
+        <h4>Hey I am learning React</h4>
+        <Person></Person>
+        <Person></Person>
+        <Person></Person>
       </header>
     </div>
   );
+}
+function Person()
+{
+  const personStyle={
+    border:'2px solid red',
+    padding: '10px',
+    margin: '10px' 
+  }
+  return (
+    <div style={personStyle}>
+      <h2 >I am a person!</h2>
+      <h3>Hi</h3>
+    </div>
+  )
 }
 
 export default App;
