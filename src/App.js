@@ -53,7 +53,9 @@ function App() {
         <h4>Hey I am learning React</h4>
         <Person></Person>
         <Person></Person>
-        <Person></Person>
+
+        <Hero name='bakugo' profession='saving people'></Hero>
+        <Hero name='takami'profession='student'></Hero>
       </header>
     </div>
   );
@@ -69,6 +71,15 @@ function Person()
     <div style={personStyle}>
       <h2 >I am a person!</h2>
       <h3>Hi</h3>
+    </div>
+  )
+}
+function Hero(props)
+{
+  return (
+    <div style={{border:'2px solid blue', width:'400px', margin:'10px'}}>
+      <h2 >hero is {props.name}</h2>
+      <p>Profession is {props.profession}</p>
     </div>
   )
 }
